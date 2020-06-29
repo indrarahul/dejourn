@@ -1,0 +1,45 @@
+<div *ngIf="showMe" class="maincontainer">
+  <div class="expthread">
+    <span>Exploration Thread</span>
+    <span class="material-icons">
+      help
+    </span>
+    <button (click)="hideMef()">
+      <span class="material-icons">
+        close
+      </span>
+    </button>
+  </div>
+  <div class="rel">
+    <div class="imgs">
+      <img src="{{ data.forUser.imgUrl }}" />
+      <img src="{{ data.fromUser.imgUrl }}" />
+    </div>
+
+    <div class="prf">
+      <span class="pName">{{ data.forUser.name }}</span>
+      <span class="uName">{{ data.fromUser.name }}</span>
+    </div>
+  </div>
+
+  <div *ngFor="let child of data.child">
+  <app-post [data]="expThreadMap[child]"></app-post>
+</div>
+
+  <div class="sdForm">
+    <form [formGroup]="standForm" (ngSubmit)="stand()" >
+      <input
+        class="inp"
+        type="text"
+        formControlName="stand"
+        placeholder="Take a stand"
+      />
+      <button class="sbm" type="submit">
+        <span class="material-icons">
+          send
+        </span>
+      </button>
+    </form>
+  </div>
+  
+</div>

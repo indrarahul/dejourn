@@ -1,0 +1,114 @@
+.maincontainer{
+    padding: 15px;
+    padding-right: 35px;
+    position: fixed;
+    
+}
+
+.expthread{
+    display: flex;
+}
+
+.expthread span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #60a297;
+    margin-left: 10px;
+}
+
+.expthread button {
+    text-align: start;
+    cursor: pointer;
+    background-color: white;
+    border: white;
+    outline: white;
+}
+
+.prf {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs{
+    position: relative;
+    margin-right: 10px;
+}
+
+img {
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+.post {
+  padding: 10px 15px;
+  background-color: #eaf7f5;
+  border-radius: 2%;
+  margin-bottom: 15px;
+}
+
+
+.rel{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 20px -10px #888888;
+    padding: 10px;
+}
+.pName{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.uName{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 9px;
+}
+
+.name {
+    color: #f8b203;
+  }
+  
+  .t1 {
+    font-size: larger;
+  }
+  
+  .t2 {
+    font-size: small;
+  }
+
+.a {
+    display: flex;
+  }
+  
+  .a span {
+    color: grey;
+    margin: 5px 0px;
+    font-size: x-small;
+    margin-right: 5px;
+  }
+
+  .sdForm{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sbm {
+    background-color: white;
+    outline: white;
+    border: white;
+    cursor: pointer;
+  }
+  
+.inp {
+  cursor: pointer;
+    margin-left: 50px;
+    width: 550px;
+    height: 30px;
+ }

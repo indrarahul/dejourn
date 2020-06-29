@@ -1,0 +1,32 @@
+<div class="root">
+  <div class="posts">
+    <div class="nPost">
+      <div *ngFor="let stand of stands">
+        <app-post [data]="stand"></app-post>
+      </div>
+    </div>
+
+    <div class="sdForm">
+      <form [formGroup]="standForm" (ngSubmit)="stand()">
+        <input
+          class="inp"
+          type="text"
+          formControlName="stand"
+          placeholder="Take a stand"
+        />
+        <button class="sbm" type="submit">
+          <span class="material-icons">
+            send
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <app-expthread
+      (hideMe)="expF($event)"
+      [showMe]="showExp"
+    ></app-expthread>
+  </div>
+</div>

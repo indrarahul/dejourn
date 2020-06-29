@@ -1,0 +1,29 @@
+.root{
+  display: flex;
+}
+
+.posts {
+  width: 50%;
+}
+
+.sdForm{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sbm {
+    background-color: white;
+    outline: white;
+    border: white;
+    cursor: pointer;
+  }
+  
+.inp {
+  cursor: pointer;
+    margin-left: 50px;
+    width: 550px;
+    height: 30px;
+ }

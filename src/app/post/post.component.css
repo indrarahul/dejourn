@@ -1,0 +1,79 @@
+.parent {
+  display: flex;
+  padding: 1em;
+}
+
+.postcontainer {
+  margin-right: 10px;
+}
+
+.post {
+  padding: 10px 15px;
+  background-color: #eaf7f5;
+  border-radius: 2%;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+img {
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.name {
+  color: #f8b203;
+}
+
+.t1 {
+  font-size: larger;
+}
+
+.t2 {
+  font-size: small;
+}
+
+.a {
+  display: flex;
+}
+
+.a span {
+  color: grey;
+  margin: 5px 0px;
+  font-size: x-small;
+  margin-right: 5px;
+}
+
+.btns button {
+  cursor: pointer;
+  margin-left: 50px;
+  background-color: white;
+  border: white;
+  outline: white;
+  color: #0e554a;
+  font-weight: 600;
+}
+
+.b2 {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cImg {
+  height: 25px;
+  width: 25px;
+}
+
+.bb2 {
+  text-align: start;
+  cursor: pointer;
+  background-color: white;
+  border: white;
+  outline: white;
+  margin-bottom: 10px;
+  height: 40px;
+  overflow: hidden;
+}

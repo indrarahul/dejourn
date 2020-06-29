@@ -1,0 +1,42 @@
+<div class="parent">
+  <div class="postcontainer">
+    <div style="display: flex; padding: 0px; margin: 0px;">
+      <div class="prf">
+        <img src="{{ data.author.imgUrl }}" />
+      </div>
+
+      <div class="post">
+        <span class="name t1">{{ data.author.name }}</span>
+        <div class="a">
+          <span class="material-icons">
+            my_location
+          </span>
+          <span>{{ data.location }}</span>
+          <span class="material-icons">
+            access_time
+          </span>
+          <span>{{ data.daysAgo }}</span>
+        </div>
+        <span class="name t2">
+          {{ data.option }}
+        </span>
+        <p>{{ data.content }}</p>
+      </div>
+    </div>
+    <div (click)="explore()" class="btns">
+      <button>Explore</button>
+    </div>
+    <div class="b2">
+      <button
+        class="bb2"
+        *ngFor="let expt of data.child;"
+        (click)="sendExpData(expt)"
+        >
+        <div>
+          <img class="cImg" src="{{ expt.fromUser.imgUrl }}" />
+          <strong>{{ expt.fromUser.name }}</strong> {{ expThreadMap[expt.child[0]].content }}
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
