@@ -12,6 +12,7 @@ export class ExpthreadComponent implements OnInit {
 
   @Input() showMe: boolean;
   @Output() hideMe = new EventEmitter<boolean>();
+  anyData: boolean = false;
 
   data: any;
 
@@ -43,9 +44,9 @@ export class ExpthreadComponent implements OnInit {
       Model.expThrds[4].option = "Aggressive";
       Model.expThrds[4].content = this.standForm.value.stand;
 
-      this.data.child.push("se4");
       this.pStandsMap[this.data.pStandId].child.push(this.data);      
       this.dataS.data(Model.exp[4]);
+      this.anyData = true;
     }
 
     this.standForm.reset();
@@ -56,6 +57,7 @@ export class ExpthreadComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataS.expData.subscribe(data => this.data = data)
+    this.dataS.anyDataB.subscribe(data => this.anyData = data)
   }
 
 }

@@ -12,7 +12,15 @@ export class DataService {
   private ShowExpSource = new BehaviorSubject(false);
   showExp = this.ShowExpSource.asObservable();
 
+  private AnyDataSource = new BehaviorSubject(false);
+  anyDataB = this.AnyDataSource.asObservable();
+
   constructor() { }
+
+
+  anyData(d: boolean){
+    this.AnyDataSource.next(d);
+  }
 
   data(d: any){
     this.Source.next(d);

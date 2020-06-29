@@ -23,7 +23,7 @@
   </div>
 
   <div *ngFor="let child of data.child">
-  <app-post [data]="expThreadMap[child]"></app-post>
+  <app-post *ngIf="anyData" [data]="expThreadMap[child]"></app-post>
 </div>
 
   <div class="sdForm">

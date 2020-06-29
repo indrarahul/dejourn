@@ -15,8 +15,7 @@ export class PostComponent implements OnInit {
   expThreadMap = Model.expThrdMap
 
   sendExpData(eData: any) {
-    console.log(eData)
-     console.log(this.expThreadMap[eData.child[0]])
+    this.dataS.anyData(true);
     this.dataS.showExpToggle(true);
     this.dataS.data(eData);
   }
@@ -26,11 +25,10 @@ export class PostComponent implements OnInit {
     Model.exp[4].pStandId = this.data.id;
     Model.exp[4].fromUser = Model.U[0];
     Model.exp[4].forUser = this.data.author;
-    Model.exp[4].child = [];
-
+    Model.exp[4].child = ["se4"];
+    this.dataS.anyData(false);
     this.dataS.showExpToggle(true);
     this.dataS.data(Model.exp[4]);
-    Model.getData();
   }
 
   constructor(private dataS: DataService) {

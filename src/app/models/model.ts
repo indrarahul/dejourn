@@ -208,6 +208,7 @@ export class Model {
         })
 
         this.pStands.forEach(element => {
+            this.expThrdMap[element.id] = element
             this.pStandsMap[element.id] = element
         })
     }
