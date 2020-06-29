@@ -1,29 +1,32 @@
-.root{
+.root {
   display: flex;
 }
 
 .posts {
   width: 50%;
+  overflow-y: scroll;
+  margin-bottom: 50px;
 }
 
-.sdForm{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+.sdForm {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .sbm {
-    background-color: white;
-    outline: white;
-    border: white;
-    cursor: pointer;
-  }
-  
+  background-color: white;
+  outline: white;
+  border: white;
+  cursor: pointer;
+}
+
 .inp {
   cursor: pointer;
-    margin-left: 50px;
-    width: 550px;
-    height: 30px;
- }
+  margin-left: 50px;
+  width: 550px;
+  height: 30px;
+}

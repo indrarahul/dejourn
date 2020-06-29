@@ -1,8 +1,13 @@
 .maincontainer{
-    padding: 15px;
-    padding-right: 35px;
+  padding: 15px;
+  padding-right: 35px;
+  flex-grow: 100;
+}
+
+.container{
     position: fixed;
-    
+    width: 50%;
+    overflow-y: scroll;    
 }
 
 .expthread{

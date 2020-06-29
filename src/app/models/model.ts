@@ -122,7 +122,7 @@ export class Model {
             location: "Ranchi",
             daysAgo: "2 days ago",
             option: "Aggressive",
-            content: "dasdasd asdwe wrw r listened to has a very personal memory attached to it - of a place, of people, of moments. It shall take me back to very specific moments in time and the fact, that I manage to remember them all, only talks plentiful about the impact it has had.",
+            content: "asdasd",
             expThrd: null,
             child: [],
         },

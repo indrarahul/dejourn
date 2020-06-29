@@ -21,7 +21,12 @@ export class PostComponent implements OnInit {
   }
 
   explore() {
-   
+    
+    if(this.data.author.id == "u0"){
+      alert("Not Possible!")
+      return
+    }
+
     Model.exp[4].pStandId = this.data.id;
     Model.exp[4].fromUser = Model.U[0];
     Model.exp[4].forUser = this.data.author;
